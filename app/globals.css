@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal-primary: #00b8a9;
+  --color-cyan-accent: #38bdf8;
+  --color-navy: #0f172a;
+  --color-dashboard: #18181b;
+  --color-muted: #71717a;
+  --color-border: #f4f4f5;
+  --color-card-from: #fafafa;
+  --color-card-to: #ffffff;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-sans);
+  color: var(--color-dashboard);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+@keyframes donut-fill {
+  from {
+    stroke-dashoffset: 251.2;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.35s ease-out forwards;
+}
+
+.animate-donut {
+  animation: donut-fill 1.2s ease-out forwards;
+}
+
+.dashboard-card {
+  background: linear-gradient(180deg, var(--color-card-from) 0%, var(--color-card-to) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}

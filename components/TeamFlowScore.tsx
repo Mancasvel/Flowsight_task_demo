@@ -55,9 +55,7 @@ export function TeamFlowScore({ onExport }: TeamFlowScoreProps) {
               </span>
             </span>
           </p>
-          <p className="mt-1 text-xs text-[#71717A]">
-            Aggregated category balance · planning aid, not surveillance
-          </p>
+
         </div>
       </div>
 

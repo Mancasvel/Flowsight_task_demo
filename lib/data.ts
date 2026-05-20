@@ -70,7 +70,7 @@ export interface SprintInsight {
 export const TEAM_NAME = "Acme GTM Squad";
 
 export const PM_INSIGHT =
-  "Sprint 24 committed 96h across product, sales, marketing & growth; team logged 78h (81% fill-rate). Top initiative: MKT-1847 launch campaign (14.2h).";
+  "Sprint 24 committed 172h of focused work across product, sales, marketing & growth; team delivered 148h (86% fill-rate). Top initiative: MKT-1847 launch campaign (14.2h).";
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
@@ -232,10 +232,10 @@ export const WORKER_TICKET_ROWS: WorkerTicketRow[] = [
 ];
 
 export const SPRINT_ROWS: SprintRow[] = [
-  { sprint: "Sprint 24", committed: 96, suggestedNext: 82, note: "Uses recent fill-rate ~81%" },
-  { sprint: "Sprint 23", committed: 88, suggestedNext: 78, note: "Actual fill-rate 79%; slight over-commit" },
-  { sprint: "Sprint 22", committed: 92, suggestedNext: 85, note: "Default 85% buffer applied" },
-  { sprint: "Sprint 21", committed: 84, suggestedNext: 76, note: "Holiday week adjusted" },
+  { sprint: "Sprint 24", committed: 172, suggestedNext: 148, note: "Uses recent fill-rate ~86%" },
+  { sprint: "Sprint 23", committed: 163, suggestedNext: 137, note: "Actual fill-rate 84%; slight over-commit" },
+  { sprint: "Sprint 22", committed: 158, suggestedNext: 139, note: "Default 88% buffer applied" },
+  { sprint: "Sprint 21", committed: 151, suggestedNext: 124, note: "Holiday week adjusted" },
 ];
 
 export const CLOSED_TICKETS: ClosedTicketRow[] = [

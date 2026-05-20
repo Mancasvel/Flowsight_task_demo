@@ -14,12 +14,10 @@ function ArtboardFrame({
   label,
   activeView,
   children,
-  showWidgets = true,
 }: {
   label: string;
   activeView: ViewId;
   children: React.ReactNode;
-  showWidgets?: boolean;
 }) {
   return (
     <div className="w-[1440px] shrink-0">
@@ -30,7 +28,7 @@ function ArtboardFrame({
         <Sidebar activeView={activeView} onViewChange={() => {}} />
         <div className="flex-1 p-8">
           <Header />
-          {showWidgets && (
+          {activeView === "workflow" && (
             <>
               <TeamFlowScore onExport={() => {}} />
               <PMBanner />
@@ -62,7 +60,7 @@ export function TaskFocusArtboards() {
         <ArtboardFrame label="Sprints & estimates" activeView="sprints">
           <SprintsTab />
         </ArtboardFrame>
-        <ArtboardFrame label="Insights & assignment" activeView="insights" showWidgets={false}>
+        <ArtboardFrame label="Insights & assignment" activeView="insights">
           <InsightsTab />
         </ArtboardFrame>
       </div>

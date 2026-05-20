@@ -19,8 +19,6 @@ export function TaskFocusDashboard() {
   const [showTour, setShowTour] = useState(true);
   const [exportOpen, setExportOpen] = useState(false);
 
-  const showSummaryWidgets = activeView !== "insights";
-
   return (
     <>
       <div className="flex h-full w-full overflow-hidden bg-white">
@@ -28,7 +26,7 @@ export function TaskFocusDashboard() {
 
         <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-y-auto px-6 py-6 lg:px-10 lg:py-8">
           <Header />
-          {showSummaryWidgets && (
+          {activeView === "workflow" && (
             <>
               <TeamFlowScore onExport={() => setExportOpen(true)} />
               <PMBanner />

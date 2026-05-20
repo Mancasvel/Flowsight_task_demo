@@ -60,12 +60,6 @@ export function TeamFlowScore({ onExport }: TeamFlowScoreProps) {
       </div>
 
       <div className="flex flex-wrap items-center gap-3">
-        <span className="rounded-full bg-[#f4f4f5] px-3 py-1 text-xs font-medium text-[#71717A]">
-          Last 30 days
-        </span>
-        <span className="rounded-full bg-[#00B8A9]/10 px-3 py-1 text-xs font-semibold text-[#00B8A9]">
-          Auto rollup
-        </span>
         <ExportButton onExport={onExport} />
       </div>
     </div>

@@ -236,6 +236,17 @@ export const SPRINT_ROWS: SprintRow[] = [
   { sprint: "Sprint 23", committed: 163, suggestedNext: 137, note: "Actual fill-rate 84%; slight over-commit" },
   { sprint: "Sprint 22", committed: 158, suggestedNext: 139, note: "Default 88% buffer applied" },
   { sprint: "Sprint 21", committed: 151, suggestedNext: 124, note: "Holiday week adjusted" },
+  { sprint: "Sprint 20", committed: 160, suggestedNext: 141, note: "Fill-rate 88%; stable cadence" },
+  { sprint: "Sprint 19", committed: 155, suggestedNext: 130, note: "Laura on leave 2d; reduced capacity" },
+  { sprint: "Sprint 18", committed: 148, suggestedNext: 133, note: "Q1 planning overlap; some meetings spike" },
+  { sprint: "Sprint 17", committed: 142, suggestedNext: 128, note: "Onboarding week for CS; Sofia ramping" },
+  { sprint: "Sprint 16", committed: 150, suggestedNext: 138, note: "Fill-rate 92%; strong focus week" },
+  { sprint: "Sprint 15", committed: 145, suggestedNext: 126, note: "Company all-hands; 1 fewer workday" },
+  { sprint: "Sprint 14", committed: 138, suggestedNext: 120, note: "New year ramp-up; partial week" },
+  { sprint: "Sprint 13", committed: 130, suggestedNext: 108, note: "Holiday season; skeleton crew" },
+  { sprint: "Sprint 12", committed: 140, suggestedNext: 122, note: "Pre-holiday push; decent fill-rate" },
+  { sprint: "Sprint 11", committed: 125, suggestedNext: 110, note: "Team still forming; lower throughput" },
+  { sprint: "Sprint 10", committed: 115, suggestedNext: 98, note: "First tracked sprint; baseline calibration" },
 ];
 
 export const CLOSED_TICKETS: ClosedTicketRow[] = [

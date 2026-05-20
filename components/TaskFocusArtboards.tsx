@@ -7,7 +7,6 @@ import { TeamFlowScore } from "./TeamFlowScore";
 import { PMBanner } from "./PMBanner";
 import { WorkflowTab } from "./WorkflowTab";
 import { TimePerTicketTab } from "./TimePerTicketTab";
-import { ClosedTicketsTab } from "./ClosedTicketsTab";
 import { SprintsTab } from "./SprintsTab";
 import { InsightsTab } from "./InsightsTab";
 
@@ -50,7 +49,7 @@ export function TaskFocusArtboards() {
       <div className="mb-6 text-center">
         <h1 className="text-xl font-semibold text-[#0f172a]">FlowSight Tasks — Artboard variants</h1>
         <p className="mt-1 text-sm text-[#71717A]">
-          All five workspace views · 1440×900 frames · cross-functional GTM squad
+          All four workspace views · 1440×900 frames · cross-functional GTM squad
         </p>
       </div>
       <div className="flex gap-8 pb-8">
@@ -59,9 +58,6 @@ export function TaskFocusArtboards() {
         </ArtboardFrame>
         <ArtboardFrame label="Time per ticket" activeView="time-per-ticket">
           <TimePerTicketTab />
-        </ArtboardFrame>
-        <ArtboardFrame label="Closed tickets" activeView="closed-tickets">
-          <ClosedTicketsTab />
         </ArtboardFrame>
         <ArtboardFrame label="Sprints & estimates" activeView="sprints">
           <SprintsTab />

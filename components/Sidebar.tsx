@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  BarChart3,
   GitBranch,
   Lightbulb,
   Timer,
@@ -26,12 +25,6 @@ const NAV_ITEMS: {
     label: "Time per ticket",
     description: "Ticket & worker drill-down",
     icon: Timer,
-  },
-  {
-    id: "closed-tickets",
-    label: "Closed tickets",
-    description: "Delivery snapshots",
-    icon: BarChart3,
   },
   {
     id: "sprints",

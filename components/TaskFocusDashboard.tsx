@@ -8,7 +8,6 @@ import { TeamFlowScore } from "./TeamFlowScore";
 import { PMBanner } from "./PMBanner";
 import { WorkflowTab } from "./WorkflowTab";
 import { TimePerTicketTab } from "./TimePerTicketTab";
-import { ClosedTicketsTab } from "./ClosedTicketsTab";
 import { SprintsTab } from "./SprintsTab";
 import { InsightsTab } from "./InsightsTab";
 import { TourCallout } from "./TourCallout";
@@ -39,7 +38,6 @@ export function TaskFocusDashboard() {
           <div className="flex-1">
             {activeView === "workflow" && <WorkflowTab />}
             {activeView === "time-per-ticket" && <TimePerTicketTab />}
-            {activeView === "closed-tickets" && <ClosedTicketsTab />}
             {activeView === "sprints" && <SprintsTab />}
             {activeView === "insights" && <InsightsTab />}
           </div>

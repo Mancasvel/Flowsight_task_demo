@@ -7,7 +7,6 @@ export type ActivityCategory =
 export type ViewId =
   | "workflow"
   | "time-per-ticket"
-  | "closed-tickets"
   | "sprints"
   | "insights";
 
